@@ -38,20 +38,3 @@ addEventListener('keyup', e => {
 
 })
 
-/*
-const input = document.querySelector('#search');
-const button = document.querySelector('#boton');
-
-const filter = () =>{
-
-    const text = input.value.toLowerCase();
-    let titles = document.querySelectorAll('h5');
-
-    for (const iterator of titles) {
-        
-    }
-   
-}
-
-button.addEventListener('click', filter)*/
-

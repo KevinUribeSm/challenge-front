@@ -3,7 +3,7 @@ const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
 
 function getProducts() {
-    const res = fetch('https://server-bsale.herokuapp.com/products/bebida');
+    const res = fetch('https://server-bsale.herokuapp.com/api/products/bebida');
     return res;
 }
 
