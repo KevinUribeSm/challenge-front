@@ -25,16 +25,18 @@ getProducts()
 
 // search
 addEventListener('keyup', e => {
+    try {
+        if (e.target.matches('#search')) {
+            let titles = document.querySelectorAll('#items > div');
 
-    if(e.target.matches('#search')){
-        let titles = document.querySelectorAll('#items > div');
-
-        for (let title of titles) {
-            title.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-            ?title.classList.remove('filtro')
-            :title.classList.add('filtro')
+            for (let title of titles) {
+                title.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                    ? title.classList.remove('filtro')
+                    : title.classList.add('filtro')
+            }
         }
+    } catch (error) {
+        console.log(error)
     }
-
-})
+});
 
